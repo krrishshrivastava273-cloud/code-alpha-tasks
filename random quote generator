@@ -9,7 +9,7 @@ class QuoteGenerator:
         self.root.geometry("600x400")
         self.root.configure(bg="#f0f0f0")
         
-        # Sample quotes database
+# Sample quotes database
         self.quotes = [
             {"text": "The only way to do great work is to love what you do.", "author": "Steve Jobs"},
             {"text": "Life is what happens to you while you're busy making other plans.", "author": "John Lennon"},
@@ -30,16 +30,16 @@ class QuoteGenerator:
         self.show_random_quote()
     
     def create_widgets(self):
-        # Main frame
+   # Main frame
         main_frame = ttk.Frame(self.root, padding="20")
         main_frame.pack(fill=tk.BOTH, expand=True)
         
-        # Title label
+     # Title label
         title_label = ttk.Label(main_frame, text="Random Quote Generator", 
                                font=("Arial", 18, "bold"))
         title_label.pack(pady=(0, 20))
         
-        # Quote display frame
+     # Quote display frame
         quote_frame = ttk.Frame(main_frame)
         quote_frame.pack(fill=tk.BOTH, expand=True, pady=20)
         
